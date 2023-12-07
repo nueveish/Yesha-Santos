@@ -1,0 +1,304 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Astronomy</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        footer{
+            background-color: #111;
+        }
+        .footerContainer{
+            width: 100%;
+            padding: 70px 30px 20px;
+        }
+        .socialIcons{
+            display: flex;
+            justify-content: center;
+        }
+        .socialIcons a{
+            text-decoration: none;
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50;
+        }
+        .socialIcons a i{
+            font-size: 2em;
+            color: black;
+            opacity: 0.9;
+        }
+        .socialIcons a:hover{
+            background-color: #111;
+            transition: 0.5s;  
+        }
+        .socialIcons a:hover i{
+            color: white;
+            transition: 0.5s;
+        }
+        .footerNav{
+            margin: 30px 0;
+        }
+        .footerNav ul{
+            display: flex;
+            justify-content: center;
+        }
+        .footerNav ul li a{
+            color: white;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 1.3em;
+            opacity: 0.7;
+            transition: 0.5s;
+        }
+        .footerNav ul li a:hover{
+            opacity: 1;
+        }
+        
+        header{
+            background: url(img/background.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        }
+        header::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 130%;
+            background: rgba(0,0,0,0.2);
+        }
+        .section{
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        @media screen and (max-width: 670px){
+            header{
+                min-height: 500px;
+            }
+        }
+        .title{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .title h1{
+            color: #fff;
+            font-size: 100px;
+            font-weight: 600;
+            font-family: monospace; 
+            transition: 0.5s;
+          
+        }
+        .title h1:hover{
+            -webkit-text-stroke: 2px  #fff ;
+            color: transparent;
+        }
+        .title a{
+            text-decoration: none;
+            display: inline-block;
+            color: #fff;
+            font-size: 24px;
+            border: 2px solid #fff;
+            padding: 14px 70px;
+            border-radius: 50px;
+            margin-top: 20px;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border:1px  solid transparent;
+            transition: 0.5 ease;
+        
+        }
+        ul li a:hover{
+            background-color:  #fff;
+            color: #000;
+        }
+        .stars{
+            background: url(img/stars.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        section div h2{
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-wrapper transparent">
+        </nav>
+    </header>
+    <header class="stars">
+        
+        <div class="title">
+            <h1>Astronomie</h1> 
+            <a href="">Scroll down to explore</a>
+
+        </div>
+    <section class="container section" id="mobile-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="img/mercury.png" alt="" class="responsive-img materialboxed" data-aos="fade-right" data-aos-duration="1000">
+                </div>
+                <div class="col s12 l6 offset-l1">
+                   <h2 class="white-text text-darken-4">Mercury</h2> 
+                   <p class="white-text text-darken-4">The closest planet to the Sun.
+                    It has extreme temperatures, ranging from extremely hot to extremely cold.
+                    It has a very thin atmosphere and no moons.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4 push-l7 offset-l1">
+                    <img src="img/venus.png" alt="" class="responsive-img materialboxed" data-aos="fade-left" data-aos-duration="1000">
+                </div>
+                <div class="col s12 l6 pull-l5 right-align offset-l1">
+                   <h2 class="white-text text-darken-4">Venus</h2> 
+                   <p class="white-text text-darken-4">Similar in size to Earth and often called Earth's "sister planet."
+                    Has a thick atmosphere mainly composed of carbon dioxide, causing a runaway greenhouse effect.
+                    It rotates on its axis very slowly and in the opposite direction to most planets./p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="img/earth.png" alt="" class="responsive-img materialboxed" data-aos="fade-right" data-aos-duration="1000">
+                </div>
+                <div class="col s12 l6 offset-l1">
+                   <h2 class="white-text text-darken-4">Earth</h2> 
+                   <p class="white-text text-darken-4">The only known planet with abundant liquid water on its surface.
+                    Supports a diverse range of life forms.
+                    The third planet from the Sun.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4 push-l7 offset-l1">
+                    <img src="img/mars.png" alt="" class="responsive-img materialboxed" data-aos="fade-left" data-aos-duration="1000">
+                </div>
+                <div class="col s12 l6 pull-l5 right-align offset-l1">
+                   <h2 class="white-text text-darken-4">Mars</h2> 
+                   <p class="white-text text-darken-4">Often called the "Red Planet" due to its reddish appearance.
+                    Has a thin atmosphere composed mostly of carbon dioxide.
+                    Contains the tallest volcano and the deepest canyon in the solar system.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="img/jupiter.png" alt="" class="responsive-img materialboxed" data-aos="fade-right" data-aos-duration="1000">
+                </div>
+                <div class="col s12 l6 offset-l1">
+                   <h2 class="white-text text-darken-4">Jupiter</h2> 
+                   <p class="white-text text-darken-4">The largest planet in the solar system, primarily composed of hydrogen and helium.
+                    Has a strong magnetic field and numerous large moons.
+                    The Great Red Spot is a massive storm on Jupiter that has been observed for centuries.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4 push-l7 offset-l1">
+                    <img src="img/saturn.png" alt="" class="responsive-img materialboxed" data-aos="fade-left" data-aos-duration="1000">
+                </div>
+                <div class="col s12 l6 pull-l5 right-align offset-l1">
+                   <h2 class="white-text text-darken-4">Saturn</h2> 
+                   <p class="white-text text-darken-4">Known for its stunning ring system, made up of icy particles and debris.
+                    Similar to Jupiter, primarily composed of hydrogen and helium.
+                    Has the second-largest moon in the solar system, Titan.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="img/uranus.png" alt="" class="responsive-img materialboxed" data-aos="fade-right" data-aos-duration="1000">
+                </div>
+                <div class="col s12 l6 offset-l1">
+                   <h2 class="white-text text-darken-4">Uranus</h2> 
+                   <p class="white-text text-darken-4">A gas giant with a blue-green color due to the presence of methane in its atmosphere.
+                    Unique among the planets as it rotates on its side, likely due to a past collision.
+                    Has a faint ring system and numerous small moons.v</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4 push-l7 offset-l1">
+                    <img src="img/neptune.png" alt="" class="responsive-img materialboxed" data-aos="fade-left" data-aos-duration="1000">
+                </div>
+                <div class="col s12 l6 pull-l5 right-align offset-l1">
+                   <h2 class="white-text text-darken-4">Neptune</h2> 
+                   <p class="white-text text-darken-4">The farthest planet from the Sun.
+                    Similar in composition to Uranus, with a blue color due to methane in its atmosphere.
+                    Has strong winds and a large storm system known as the Great Dark Spot.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="img/pluto.png" alt="" class="responsive-img materialboxed" data-aos="fade-right" data-aos-duration="1000">
+                </div>
+                <div class="col s12 l6 offset-l1">
+                   <h2 class="white-text text-darken-4">Pluto</h2> 
+                   <p class="white-text text-darken-4">Once considered the ninth planet, reclassified as a dwarf planet in 2006.
+                    Part of the Kuiper Belt, a region of icy bodies beyond Neptune.
+                    Has five known moons, including Charon, which is relatively large compared to Pluto.</p>
+                </div>
+            </div>
+        </header>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="img/galaxy.jpg" alt="" class="responsive-img">
+            </div>
+        </div>
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align white-text">&copy; 2023 Astronomie</div>
+          </div>
+        </div>
+        
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+        });
+    </script>
+</body>
+</html>
